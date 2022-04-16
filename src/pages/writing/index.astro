@@ -1,0 +1,32 @@
+---
+import DefaultLayout from "@/layouts/DefaultLayout.astro";
+
+const posts = await Astro.glob("./*.md").then((posts) =>
+  posts.sort(
+    (a, b) =>
+      new Date(b.frontmatter.date).getTime() -
+      new Date(a.frontmatter.date).getTime()
+  )
+);
+
+function formatDate(date: string): string {
+  return new Date(date).toLocaleDateString("en-US", { dateStyle: "long" });
+}
+---
+
+<DefaultLayout title="Writing">
+  <main>
+    <h2>Writing</h2>
+    <h3>
+      As a part of developing and creating my new website I wanted to include a
+      space where I could share my thoughts. Not just about design but a space
+      where I could talk freely.
+    </h3>
+    {posts.map((post) => (
+      <article>
+        <h3><a href={post.url}>{post.frontmatter.title}</a></h3>
+        <time datetime={post.frontmatter.date}>{formatDate(post.frontmatter.date)}</time>
+      </article>
+    ))}
+  </main>
+</DefaultLayout>
