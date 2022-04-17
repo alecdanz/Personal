@@ -5,7 +5,7 @@ export interface Props {
 const { activeLink } = Astro.props;
 
 function linkClass(type: string): string {
-  const base = "text-regular text-overcast font-bold";
+  const base = "text-regular text-overcast font-bold hover:text-cloudy dark:text-cream";
   const active =
     type === activeLink
       ? "text-night flex items-center relative before:block before:w-6 before:h-6 before:rounded-full before:absolute before:left-[-30px]"
