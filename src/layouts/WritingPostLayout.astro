@@ -1,0 +1,13 @@
+---
+import DefaultLayout from "./DefaultLayout.astro";
+
+export interface Props {
+  title: string;
+  date: string;
+}
+const { content } = Astro.props as { content: Props };
+---
+
+<DefaultLayout title={content.title} activeLink="writing">
+  <slot />
+</DefaultLayout>

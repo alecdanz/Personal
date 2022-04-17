@@ -1,5 +1,5 @@
 ---
-layout: "@/layouts/DefaultLayout.astro"
+layout: "@/layouts/WritingPostLayout.astro"
 date: "2020-04-13"
 title: "Test 2"
 ---

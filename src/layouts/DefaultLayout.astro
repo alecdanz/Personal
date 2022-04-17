@@ -1,25 +1,33 @@
 ---
+import TopBar from "@/components/TopBar.astro";
+
 export interface Props {
   title: string;
+  activeLink: "home" | "work" | "writing" | "about";
 }
-const { title } = Astro.props as Props;
+const { title, activeLink } = Astro.props as Props;
 ---
 
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>{`Alec Danz | ${title}`}</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/work">Work</a></li>
-          <li><a href="/writing">Writing</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-      </nav>
+      <TopBar {activeLink} />
     </header>
     <slot />
   </body>
 </html>
+
+<style>
+  body {
+    font-family: "Inter", sans-serif;
+  }
+</style>
