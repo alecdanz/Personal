@@ -9,7 +9,32 @@ const { content } = Astro.props as { content: Props };
 ---
 
 <DefaultLayout title={content.title} activeLink="writing">
-  <main>
-    <slot />
+  <main class="w-full max-w-screen-lg mx-auto">
+    <article class="w-full max-w-prose">
+      <time datetime={content.date}
+        >{new Date(content.date).toLocaleDateString("en-US", {
+          dateStyle: "long",
+        })}</time
+      >
+      <slot />
+    </article>
   </main>
 </DefaultLayout>
+
+<style>
+  article :global(h2) {
+    @apply text-regular font-bold mb-[1.5em];
+  }
+
+  article :global(h3) {
+    @apply text-medium font-semibold mb-[1.5em];
+  }
+
+  article :global(strong) {
+    @apply font-semibold;
+  }
+
+  article :global(img) {
+    @apply w-full h-auto;
+  }
+</style>

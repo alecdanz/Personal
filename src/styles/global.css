@@ -7,8 +7,12 @@
     @apply underline underline-offset-[5px] hover:text-cloudy-white dark:hover:text-cloudy;
   }
 
-  p {
-    @apply mb-[1.5em];
+  p + p {
+    @apply mt-[1.5em];
+  }
+
+  time {
+    @apply text-cloudy-white dark:text-cloudy;
   }
 
   :focus {
