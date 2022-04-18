@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply underline underline-offset-[5px] hover:text-cloudy-white dark:hover:text-cloudy;
+  }
+
+  :focus {
+    @apply outline-none;
+  }
+
+  :focus-visible {
+    @apply ring-2 ring-orange;
+  }
+}
