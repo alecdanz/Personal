@@ -4,35 +4,54 @@ export interface Props {
 }
 const { activeLink } = Astro.props;
 
+const links = [
+  {
+    id: 'home',
+    href: '/',
+    text: 'Home'
+  },
+  {
+    id: 'work',
+    href: '/work',
+    text: 'Work'
+  },
+  {
+    id: 'writing',
+    href: '/writing',
+    text: 'Writing'
+  },
+  {
+    id: 'about',
+    href: '/about',
+    text: 'About'
+  },
+]
+
 function linkClass(type: string): string {
-  const base = "text-regular text-overcast font-bold hover:text-cloudy dark:text-cream";
+  const base =
+    "text-regular text-overcast font-bold hover:text-cloudy-white dark:text-cream dark:hover:text-cloudy focus:outline-none focus:ring-2 focus:ring-orange";
   const active =
     type === activeLink
       ? "text-night flex items-center relative before:block before:w-6 before:h-6 before:rounded-full before:absolute before:left-[-30px]"
       : "";
   const color = {
-    home: "before:bg-[#ff7a00]",
-    work: "before:bg-[#ff00e5]",
-    writing: "before:bg-[#ffe500]",
-    about: "before:bg-[#00f0ff]",
+    home: "before:bg-orange",
+    work: "before:bg-magenta",
+    writing: "before:bg-yellow",
+    about: "before:bg-cyan",
   }[type];
   return `${base} ${active} ${color}`;
 }
 ---
 
-<nav class="ml-[330px] pt-10">
-  <ul class="flex space-x-20">
-    <li>
-      <a href="/" class={linkClass("home")}>Home</a>
-    </li>
-    <li>
-      <a href="/work" class={linkClass("work")}>Work</a>
-    </li>
-    <li>
-      <a href="/writing" class={linkClass("writing")}>Writing</a>
-    </li>
-    <li>
-      <a href="/about" class={linkClass("about")}>About</a>
-    </li>
+<nav class="max-w-screen-lg pt-10 mx-auto flex flex-col lg:items-start">
+  <ul class="flex flex-col items-end lg:flex-row lg:items-center lg:space-x-20">
+    {links.map((link) => (
+      <li>
+        {link.id === activeLink
+          ? <h1><a href={link.href} class={linkClass(link.id)} aria-current>{link.text}</a></h1>
+          : <a href={link.href} class={linkClass(link.id)}>{link.text}</a>}
+      </li>
+    ))}
   </ul>
 </nav>

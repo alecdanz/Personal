@@ -6,8 +6,13 @@ module.exports = {
         night: "#22252D",
         overcast: "#414140",
         cloudy: "#B5B4AE",
+        "cloudy-white": "#76756D",
         cream: "#ECEBE2",
         clear: "#F5F5F5",
+        orange: "#ff7a00",
+        magenta: "#ff00e5",
+        yellow: "#ffe500",
+        cyan: "#00f0ff",
       },
       fontSize: {
         big: ["40px", "60px"],
