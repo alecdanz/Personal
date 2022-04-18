@@ -1,5 +1,6 @@
 ---
 import TopBar from "@/components/TopBar.astro";
+import "@/styles/global.css";
 
 export interface Props {
   title: string;
@@ -19,7 +20,7 @@ const { title, activeLink } = Astro.props as Props;
     <title>{`Alec Danz | ${title}`}</title>
   </head>
   <body
-    class="bg-clear dark:bg-night text-['Inter',sans-serif] text-night dark:text-clear text-paragraph font-normal px-6 pb-20 lg:px-[172px]"
+    class="bg-clear dark:bg-night font-body text-night dark:text-clear text-paragraph font-normal px-6 pb-20 lg:px-[172px]"
   >
     <header class="mb-36 relative">
       <TopBar {activeLink} />

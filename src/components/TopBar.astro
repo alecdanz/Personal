@@ -31,7 +31,7 @@ const links = [
 
 function linkClass(type: string): string {
   const base =
-    "text-regular text-overcast font-bold hover:text-cloudy-white dark:text-cream dark:hover:text-cloudy";
+    "text-regular text-overcast font-bold hover:text-cloudy-white dark:text-cream dark:hover:text-cloudy no-underline";
   const active =
     type === activeLink
       ? "text-night dark:text-clear flex items-center relative before:block before:w-6 before:h-6 before:rounded-full before:absolute before:left-[-30px]"
