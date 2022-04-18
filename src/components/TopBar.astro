@@ -1,4 +1,6 @@
 ---
+import DarkModeToggle from '@/components/DarkModeToggle.astro';
+
 export interface Props {
   activeLink: "home" | "work" | "writing" | "about";
 }
@@ -29,10 +31,10 @@ const links = [
 
 function linkClass(type: string): string {
   const base =
-    "text-regular text-overcast font-bold hover:text-cloudy-white dark:text-cream dark:hover:text-cloudy focus:outline-none focus:ring-2 focus:ring-orange";
+    "text-regular text-overcast font-bold hover:text-cloudy-white dark:text-cream dark:hover:text-cloudy focus:outline-none focus-visible:ring-2 focus-visible:ring-orange";
   const active =
     type === activeLink
-      ? "text-night flex items-center relative before:block before:w-6 before:h-6 before:rounded-full before:absolute before:left-[-30px]"
+      ? "text-night dark:text-clear flex items-center relative before:block before:w-6 before:h-6 before:rounded-full before:absolute before:left-[-30px]"
       : "";
   const color = {
     home: "before:bg-orange",
@@ -44,7 +46,7 @@ function linkClass(type: string): string {
 }
 ---
 
-<nav class="max-w-screen-lg pt-10 mx-auto flex flex-col lg:items-start">
+<nav class="max-w-screen-lg pt-10 mx-auto flex flex-row-reverse justify-between lg:flex-row lg:items-center">
   <ul class="flex flex-col items-end lg:flex-row lg:items-center lg:space-x-20">
     {links.map((link) => (
       <li>
@@ -54,4 +56,5 @@ function linkClass(type: string): string {
       </li>
     ))}
   </ul>
+  <DarkModeToggle />
 </nav>
