@@ -21,9 +21,24 @@ const { activeLink } = Astro.props as Props;
     />
     <slot name="seo" />
     <script is:inline>
-      if (matchMedia("(prefers-color-scheme: dark)").matches) {
-        document.documentElement.classList.add("dark");
-      }
+      (function setTheme() {
+        const savedTheme = localStorage.getItem("theme");
+
+        if (!savedTheme) {
+          if (matchMedia("(prefers-color-scheme: dark)")) {
+            setDark();
+          }
+          return;
+        }
+
+        if (savedTheme === "dark") {
+          setDark();
+        }
+
+        function setDark() {
+          document.documentElement.classList.add("dark");
+        }
+      })();
     </script>
   </head>
   <body
