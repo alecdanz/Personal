@@ -11,21 +11,21 @@ interface SelectWork {
 }
 const selectWorks: SelectWork[] = [
   {
-    thumbnail: "",
+    thumbnail: "https://picsum.photos/seed/1/96/96",
     title: "Prenda Design System",
     duration: "2021 - Present",
     details: "Stuff about the Prenda Design System",
     link: "/work/prenda-design-system",
   },
   {
-    thumbnail: "",
+    thumbnail: "https://picsum.photos/seed/2/96/96",
     title: "Prenda marketplace",
     duration: "2021 - Present",
     details: "Create a place for parents and students to find their next microschool guide.",
     link: "/work/prenda-marketplace",
   },
   {
-    thumbnail: "",
+    thumbnail: "https://picsum.photos/seed/3/96/96",
     title: "LegalShield member experience",
     duration: "2020 - 2021",
     details:
@@ -33,7 +33,7 @@ const selectWorks: SelectWork[] = [
     link: "/work/legalshield-member-experience",
   },
   {
-    thumbnail: "",
+    thumbnail: "https://picsum.photos/seed/4/96/96",
     title: "LegalShield partner application",
     duration: "2018 - 2019",
     details:
@@ -41,7 +41,7 @@ const selectWorks: SelectWork[] = [
     link: "/work/legalshield-partner-application",
   },
   {
-    thumbnail: "",
+    thumbnail: "https://picsum.photos/seed/5/96/96",
     title: "Mandela design system",
     duration: "2019 - 2021",
     details:
@@ -100,7 +100,7 @@ const resume: ResumeItem[] = [
     title: 'Web Designer',
     organization: {
       name: 'Combustion Group',
-      link: ''
+      link: 'https://combustion.com/'
     },
     duration: '2014 - 2016',
     details: 'Designed for iPad, Mobile, Desktop, and TVos for multiple different clients. By the end of my tenure I was leading a small group of 3 designers on multiple efforts.'
@@ -160,7 +160,7 @@ const volunteerExperience: ResumeItem[] = [
         </h2>
         {selectWorks.map(({thumbnail, title, duration, details, link}) => (
             <article class="flex flex-col lg:flex-row lg:items-start lg:space-x-6 mb-10">
-                <img src={thumbnail} width="96" height="96" class="w-24 h-24 rounded-lg mb-[6px]" />
+                <img src={thumbnail} width="96" height="96" class="w-24 h-24 bg-[#C4C4C4] rounded-lg mb-[6px]" />
                 <div class="w-full">
                     <header class="flex flex-col lg:flex-row lg:justify-between text-medium font-semibold mb-[6px]">
                         <h3 class= "text-overcast dark:text-cream">{title}</h3>
@@ -181,7 +181,7 @@ const volunteerExperience: ResumeItem[] = [
         {resume.map(({title, organization, duration, details}) => (
           <article class="mb-10">
             <header class="flex flex-col lg:flex-row lg:justify-between text-medium font-semibold mb-[6px]">
-              <h3 class="text-overcast dark:text-cream">{title} • <a href={organization.link || null}>{organization.name}</a></h3>
+              <h3 class="text-overcast dark:text-cream">{title} • <a href={organization.link}>{organization.name}</a></h3>
               <span class="text-cloudy-white dark:text-cloudy">{duration}</span>
             </header>
             <p>{details}</p>
