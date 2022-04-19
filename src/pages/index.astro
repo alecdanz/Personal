@@ -1,4 +1,5 @@
 ---
+import { SEO } from "astro-seo";
 import mepng from "@/assets/Me.png";
 import mepng2x from "@/assets/Me@2x.png";
 import mepng3x from "@/assets/Me@3x.png";
@@ -7,7 +8,26 @@ import CmykIcon from "@/components/CmykIcon.astro";
 import DefaultLayout from "@/layouts/DefaultLayout.astro";
 ---
 
-<DefaultLayout title="Home" activeLink="home">
+<DefaultLayout activeLink="home">
+  <SEO
+    slot="seo"
+    title="Alec Danz | Home"
+    description="Hello, I'm Alec (he/him). I'm a digital product designer living and working remotely in Oklahoma City."
+    openGraph={{
+      basic: {
+        title: "Home",
+        type: "website",
+        image: `${Astro.site}Me.png`,
+      },
+      optional: {
+        siteName: "Alec Danz",
+      },
+      image: {
+        alt: "Alec Danz, the designer of this website, and creator of its content, in portrait",
+      },
+    }}
+  />
+
   <main class="max-w-screen-lg mx-auto relative">
     <img
       src={mepng}

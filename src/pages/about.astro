@@ -1,8 +1,28 @@
 ---
+import { SEO } from "astro-seo";
 import DefaultLayout from "@/layouts/DefaultLayout.astro";
 ---
 
-<DefaultLayout title="About" activeLink="about">
+<DefaultLayout activeLink="about">
+  <SEO
+    slot="seo"
+    title="Alec Danz | About"
+    description="What my site is all about."
+    openGraph={{
+      basic: {
+        title: "About",
+        type: "website",
+        image: `${Astro.site}Me.png`,
+      },
+      optional: {
+        siteName: "Alec Danz",
+      },
+      image: {
+        alt: "Alec Danz, the designer of this website, and creator of its content, in portrait",
+      },
+    }}
+  />
+
   <main class="max-w-screen-lg mx-auto">
     <h2 class="text-regular font-bold mb-[1.5em]">About</h2>
     <p>🚧</p>

@@ -1,4 +1,5 @@
 ---
+import {SEO} from 'astro-seo';
 import DefaultLayout from "@/layouts/DefaultLayout.astro";
 
 interface SelectWork {
@@ -20,8 +21,7 @@ const selectWorks: SelectWork[] = [
     thumbnail: "",
     title: "Prenda marketplace",
     duration: "2021 - Present",
-    details:
-      "Facilitated business product visions through user research, ideation, and prototyping user experiences for various Paycom applications.",
+    details: "Create a place for parents and students to find their next microschool guide.",
     link: "/work/prenda-marketplace",
   },
   {
@@ -129,7 +129,26 @@ const volunteerExperience: ResumeItem[] = [
 ]
 ---
 
-<DefaultLayout title="Work" activeLink="work">
+<DefaultLayout  activeLink="work">
+  <SEO
+    slot="seo"
+    title="Alec Danz | Work"
+    description="Alec Danz's select work, resume, and volunteer experience"
+    openGraph={{
+      basic: {
+        title: "Work",
+        type: "website",
+        image: `${Astro.site}Me.png`,
+      },
+      optional: {
+        siteName: "Alec Danz"
+      },
+      image: {
+        alt: "Alec Danz, the designer of this website, and creator of its content, in portrait",
+      },
+    }}
+  />
+
   <main class="max-w-screen-lg mx-auto">
     <div class="max-w-[716px]">
       <section class="mb-40">
