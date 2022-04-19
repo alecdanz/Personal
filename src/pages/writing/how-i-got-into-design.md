@@ -24,5 +24,4 @@ So I began as a unpaid intern, working my way into web design. The start of my c
 
 From there I have worked at 5 different companies, I've married the girl of my dreams, I've purchased a home in Oklahoma City, and I've continued to raise my kiddo who will be 8 by the time that this is published.
 
-Hopefully that story can help someone, I'm still growing, I'm still getting my feet under me, but I'm grateful for the journey that led me here and I'm happy to share it. 🖖`
-
+Hopefully that story can help someone, I'm still growing, I'm still getting my feet under me, but I'm grateful for the journey that led me here and I'm happy to share it. 🖖
