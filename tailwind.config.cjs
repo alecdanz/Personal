@@ -13,6 +13,7 @@ module.exports = {
         magenta: "#ff00e5",
         yellow: "#ffe500",
         cyan: "#00f0ff",
+        link: "#0035BD",
       },
       fontSize: {
         big: ["40px", "60px"],

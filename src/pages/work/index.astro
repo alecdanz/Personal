@@ -1,0 +1,93 @@
+---
+import DefaultLayout from "@/layouts/DefaultLayout.astro";
+
+interface SelectWork {
+  thumbnail: string;
+  title: string;
+  duration: string;
+  details: string;
+  link: string;
+}
+const selectWorks: SelectWork[] = [
+  {
+    thumbnail: "",
+    title: "Prenda Design System",
+    duration: "2021 - Present",
+    details: "Stuff about the Prenda Design System",
+    link: "/work/prenda-design-system",
+  },
+  {
+    thumbnail: "",
+    title: "Prenda marketplace",
+    duration: "2021 - Present",
+    details:
+      "Facilitated business product visions through user research, ideation, and prototyping user experiences for various Paycom applications.",
+    link: "/work/prenda-marketplace",
+  },
+  {
+    thumbnail: "",
+    title: "LegalShield member experience",
+    duration: "2020 - 2021",
+    details:
+      "Facilitated business product visions through user research, ideation, and prototyping user experiences for various Paycom applications.",
+    link: "/work/legalshield-member-experience",
+  },
+  {
+    thumbnail: "",
+    title: "LegalShield partner application",
+    duration: "2018 - 2019",
+    details:
+      "Agency style work with clients from various industries retail, pharmaceutical, insurance, and financial services. Responsibilities included - iconography, prototyping, wireframing and other production efforts.",
+    link: "/work/legalshield-partner-application",
+  },
+  {
+    thumbnail: "",
+    title: "Mandela design system",
+    duration: "2019 - 2021",
+    details:
+      "Designed for iPad, Mobile, Desktop, and TVos for multiple different clients. By the end of my tenure I was leading a small group of 3 designers on multiple efforts.",
+    link: "/work/mandela-design-system",
+  },
+];
+---
+
+<DefaultLayout title="Work" activeLink="work">
+  <main class="max-w-screen-large mx-auto">
+    <div class="max-w-[716px]">
+      <section>
+        <h2
+          class="text-regular font-bold pb-6 border-b-[1px] border-cream dark:border-overcast mb-6"
+        >
+          Select Work
+        </h2>
+        {selectWorks.map(({thumbnail, title, duration, details, link}) => (
+            <article class="flex items-start space-x-6 mb-10">
+                <img src={thumbnail} width="96" height="96" class="w-24 h-24 rounded-lg" />
+                <div class="w-full">
+                    <div class="flex justify-between text-medium font-semibold mb-[6px]">
+                        <h3 class= "text-overcast dark:text-cream">{title}</h3>
+                        <span class="text-cloudy-white dark:text-cloudy">{duration}</span>
+                    </div>
+                    <p class="mb-[6px]">{details}</p>
+                    <a href={link} class="text-link no-underline hover:text-link dark:hover:text-link hover:underline">Learn more</a>
+                </div>
+            </article>
+        ))}
+      </section>
+      <section>
+        <h2
+          class="text-regular font-bold pb-6 border-b-[1px] border-cream dark:border-overcast"
+        >
+          Resume
+        </h2>
+      </section>
+      <section>
+        <h2
+          class="text-regular font-bold pb-6 border-b-[1px] border-cream dark:border-overcast"
+        >
+          Volunteer Experience
+        </h2>
+      </section>
+    </div>
+  </main>
+</DefaultLayout>
