@@ -3,19 +3,13 @@ import DefaultLayout from "./DefaultLayout.astro";
 
 export interface Content {
   title: string;
-  date: string;
 }
 const { content } = Astro.props as { content: Content };
 ---
 
-<DefaultLayout title={content.title} activeLink="writing">
+<DefaultLayout title={content.title} activeLink="work">
   <main class="max-w-screen-lg mx-auto">
     <article class="max-w-[632px]">
-      <time datetime={content.date}
-        >{new Date(content.date).toLocaleDateString("en-US", {
-          dateStyle: "long",
-        })}</time
-      >
       <slot />
     </article>
   </main>

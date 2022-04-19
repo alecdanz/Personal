@@ -1,5 +1,6 @@
 ---
 import TopBar from "@/components/TopBar.astro";
+import "@/styles/global.css";
 
 export interface Props {
   title: string;
@@ -8,8 +9,11 @@ export interface Props {
 const { title, activeLink } = Astro.props as Props;
 ---
 
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +23,7 @@ const { title, activeLink } = Astro.props as Props;
     <title>{`Alec Danz | ${title}`}</title>
   </head>
   <body
-    class="bg-clear dark:bg-night text-['Inter',sans-serif] text-night dark:text-clear text-paragraph font-normal px-6 pb-20 lg:px-[172px]"
+    class="bg-clear dark:bg-night font-body text-night dark:text-clear text-paragraph font-normal px-6 pb-20 lg:px-[172px]"
   >
     <header class="mb-36 relative">
       <TopBar {activeLink} />

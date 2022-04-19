@@ -7,11 +7,19 @@
     @apply underline underline-offset-[5px] hover:text-cloudy-white dark:hover:text-cloudy;
   }
 
+  p + p {
+    @apply mt-[1.5em];
+  }
+
+  time {
+    @apply text-cloudy-white dark:text-cloudy;
+  }
+
   :focus {
     @apply outline-none;
   }
 
   :focus-visible {
-    @apply ring-2 ring-orange;
+    @apply outline-none ring-2 ring-orange;
   }
 }
