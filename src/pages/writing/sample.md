@@ -2,6 +2,7 @@
 layout: "@/layouts/WritingPostLayout.astro"
 date: "2020-04-12"
 title: "Article Name"
+description: "Put a short excerpt or description here. About two-ish sentences."
 ---
 
 <!-- @alecdanz this is for reference on how to add an image ↓ -->

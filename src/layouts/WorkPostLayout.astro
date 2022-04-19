@@ -21,6 +21,7 @@ const { content } = Astro.props as { content: Content };
         image: `${Astro.site}Me.png`,
       },
       optional: {
+        description: content.description,
         siteName: "Alec Danz",
       },
       image: {

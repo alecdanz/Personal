@@ -2,6 +2,7 @@
 layout: "@/layouts/WritingPostLayout.astro"
 date: "2020-04-18"
 title: "How I got into design"
+description: "I always enjoy reading others stories about their path into design. What made them want to go down the path of becoming a designer generally resonates with some younger version of myself. I have to think back to"
 ---
 
 ## How I got into design
