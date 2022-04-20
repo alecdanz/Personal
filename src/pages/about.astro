@@ -1,21 +1,24 @@
 ---
 import { SEO } from "astro-seo";
 import DefaultLayout from "@/layouts/DefaultLayout.astro";
+
+const title = "About";
+const heading = "This page is all about me, Alec";
 ---
 
 <DefaultLayout activeLink="about">
   <SEO
     slot="seo"
-    title="Alec Danz | About"
-    description="What my site is all about."
+    title={`Alec Danz | ${title}`}
+    description={heading}
     openGraph={{
       basic: {
-        title: "About",
+        title: title,
         type: "website",
         image: `${Astro.site}share-image.png`,
       },
       optional: {
-        description: "What my site is all about.",
+        description: heading,
         siteName: "Alec Danz",
       },
       image: {
@@ -25,7 +28,64 @@ import DefaultLayout from "@/layouts/DefaultLayout.astro";
   />
 
   <main class="max-w-screen-lg mx-auto">
-    <h2 class="text-regular font-bold mb-[1.5em]">About</h2>
-    <p>🚧</p>
+    <h2 class="text-regular font-bold mb-[1.5em]">{heading}</h2>
+    <div class="max-w-[632px] mb-10">
+      <p>
+        I grew up in North Texas interested in design, art, and performance from
+        a young age. My undergraduate degree is in Theatrical Design and
+        Production from Oklahoma City University in 2015.
+      </p>
+      <p>
+        In my spare time, I like to keep busy. I might be 80 feet up climbing
+        granite in the Wichita Mountains. Or - at home tinkering in the garage
+        on woodworking projects, throwing clay on my pottery wheel, or learning
+        how to fix something in my historic home. It could be a Dungeons and
+        Dragons night, board games day, or an afternoon with a new video game. I
+        might be traveling - flying out to Florida, driving to El Paso, down in
+        Dallas, or spending the week in Nicaragua. But most nights you'll find
+        me cooking up something delish for dinner.
+      </p>
+      <p>
+        Now-and-days I live in Oklahoma City with my wife Tiffany, daughter
+        Gwen, two dogs <a href="https://www.instagram.com/shibasoftheshire/"
+          >Bilbo and Frodo Baggins</a
+        >, and our cat Lyra.
+      </p>
+    </div>
+    <div class="flex space-x-6 justify-start mb-[130px]">
+      <img
+        class="bg-placeholder-gray rounded-[4px]"
+        src="https://picsum.photos/seed/rocks/230/230"
+        alt="some place I went rock climbing"
+        width="230"
+        height="230"
+      />
+      <img
+        class="bg-placeholder-gray rounded-[4px]"
+        src="https://picsum.photos/seed/icecream/230/230"
+        alt="me and my daughter enjoying ice cream"
+        width="230"
+        height="230"
+      />
+      <img
+        class="bg-placeholder-gray rounded-[4px]"
+        src="https://picsum.photos/seed/ALTO/230/230"
+        alt="a street with a sign that says 'ALTO'"
+        width="230"
+        height="230"
+      />
+    </div>
+    <div class="w-[259px] h-[6px] bg-cloudy-white dark:bg-cloudy mb-[52px]">
+    </div>
+    <h2 class="max-w-[708px] text-big font-bold mb-[46px]">
+      Looking for a consultation, interested in working together?
+    </h2>
+    <a
+      href="mailto:alecdanz@gmail.com"
+      class="text-link text-regular font-bold no-underline hover:text-link hover:underline"
+      >Email me</a
+    >
+    <div class="w-[259px] h-[6px] bg-cloudy-white dark:bg-cloudy mt-[52px]">
+    </div>
   </main>
 </DefaultLayout>

@@ -14,6 +14,7 @@ module.exports = {
         yellow: "#ffe500",
         cyan: "#00f0ff",
         link: "#0035BD",
+        "placeholder-gray": "#c4c4c4",
       },
       fontSize: {
         big: ["40px", "60px"],
