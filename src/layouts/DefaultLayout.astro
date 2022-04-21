@@ -25,7 +25,7 @@ const { activeLink } = Astro.props as Props;
         const savedTheme = localStorage.getItem("theme");
 
         if (!savedTheme) {
-          if (matchMedia("(prefers-color-scheme: dark)")) {
+          if (matchMedia("(prefers-color-scheme: dark)").matches) {
             setDark();
           }
           return;
