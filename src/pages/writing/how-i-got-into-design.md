@@ -2,27 +2,30 @@
 layout: "@/layouts/WritingPostLayout.astro"
 date: "2020-04-18"
 title: "How I got into design"
-description: "I always enjoy reading others stories about their path into design. What made them want to go down the path of becoming a designer generally resonates with some younger version of myself. I have to think back to"
+description: "I share my story to illuminate the entropy of life. You never know what is going to happen, and for me I happened into design."
 ---
 
 ## How I got into design
 
-I always enjoy reading others stories about their path into design. What made them want to go down the path of becoming a designer generally resonates with some younger version of myself. I have to think back to
+I share my story to illuminate the entropy of life. You never know what is going to happen, and for me I happened into design.
 
-My path into design isn't a predictable one. I stumbled here and there and found a landing spot in design. In high school I was extremely excited to be involved. My main passion was found in the theatre. I loved being able to walk up on stage and pretend to be something that I wasn't, and in particular I loved improv and comedy. Singing, not so much. So when I didn't get offered a position in the musical. From that point I found the world of technical theatre.
+In high school I was extremely excited to be involved. I think that lots of people feel that way, but I wasn't the most athletic, I didn't find a lot of joy in studying, I found my home in the theatre. I loved being able to walk up on stage and pretend to be something that I wasn't, I loved the people, I loved the collaboration of playing off of someone's energy and getting that energy sent back to you, and it was a place where I could by myself artistically. Theatre is also a place where you can go fast and learn things quickly. I learned painting, I hung lights, I programed lighting board, I got to do a lot of really cool and interesting things.
 
-All throughout the rest of high school I opted for building sets, hanging and programming lights, and stage managing. Pretty soon it seemed like the next course of action would be to just go off and keep doing this because it's what I enjoyed. I got accepted at a college in Oklahoma for a degree in Lighting Design and joined. While in college I struggled to keep up with the day to day tasks as well as the work in the shop, and I even joined a fraternity. Overall you could say that I spread myself a little thin.
+For college, I didn't know what I wanted to do with the rest of my life - just a quick side thought I'm not sure how great of an idea that it is to ask eighteen year olds to make decisions like this about their future, but I digress. So! Eighteen year old Alec decided that he would study theatrical design and production at Oklahoma City University. College was a tough transition for me, but this is where I started to learn more about design fundamentals. Before my education with design was just play, play with lights, play with paint, play with scenery. Not anything serious thoughtful or particularly intentional.
 
-I don't like talking about myself, this is all very uncomfortable for me, but probably good.
+### This is where things got a bit complicated
 
-I also got my first time serious girlfriend. And we hit it off pretty well. She joined me over the summer in Wichita Kansas while I worked as a carpenter for a musical theatre company. And later in our Junior year we learned that we were going to have a child together. Now, this is where I had to figure out something to do pretty quickly.
+I learned about halfway through my Junior year in college that I was going to be a dad. It was a mix of different feelings, but mostly panic, mixed with excitement, and a little bit of terror. My college girlfriend for about 9 months, and my current wife. I had to quickly transition myself from aloof college kid to a responsible family man.
 
-That's how it felt at least. I did not want to be the guy that went off to college, life ahead of him, and ended up going into a career that he didn't like because he got someone he was with pregnant. That was not the life that I was planning to have for myself. So I talked to my friend and roommate who was working at a small tech agency doing some light photoshop work to see if they would let me intern for free. Just so that I could learn stuff like photoshop and what an app is.
+So, I did what any reasonable 22 year old would do - I talked to my friend and roommate, who was working at a small tech agency doing some light photoshop work, to see if I could intern there, start to learn something. Just as I started learning theatre I started learning app design. I watched youtube videos, I read online blogs, I studied the pen tool, and I mastered photoshop exports to maximize efficiency in the art of asset management.
 
-This is where I entered tech. A scared college kid just looking for a way out. I knew that theatre design would be a rewarding, but ultimately punishing and slow moving career. And it wasn't the theatre that I really liked about it, really what appealed to me was designing something. The art of **storytelling** and how I could add or take away from that with the timing of a dramatic light cue or the color of backlight as it filled a scene just perfectly. I also loved being able to collaborate and work with people.
+**I didn't know what I was getting into. I just knew that tech was an exciting space, I already understood design - how hard could learning the other stuff be?**
 
-So I began as a unpaid intern, working my way into web design. The start of my career wasn't anything special. I cut my teeth exporting assets in photoshop. I was also finishing out college in a design degree, but a different design than I planned to move forward with. I was also learning to be a parent at 21. If you're becoming a parent for the first time, don't do it while doing all of the stuff that i was. believe me.
+I graduated and to my surprise the company I worked for asked me to go full time, they even offered me money! I was getting paid to professionally design software, that was pretty cool. Maybe 2 years into designing I learned the term UX.
 
-From there I have worked at 5 different companies, I've married the girl of my dreams, I've purchased a home in Oklahoma City, and I've continued to raise my kiddo who will be 8 by the time that this is published.
+I still use the **storytelling** and collaboration techniques that I learned in the theatre. I still think a perfectly timed light cue and try to bring that energy to the software that I'm crafting. The collaboration between director and designer on the stage mirrors the collaboration between Product Manager and designer online.
+
+I've now worked at five different companies doing design. I've worked in lots of different industries bringing a different perspective to the room.
 
 Hopefully that story can help someone, I'm still growing, I'm still getting my feet under me, but I'm grateful for the journey that led me here and I'm happy to share it. 🖖
+

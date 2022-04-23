@@ -1,6 +1,19 @@
 ---
 import { SEO } from "astro-seo";
 import DefaultLayout from "@/layouts/DefaultLayout.astro";
+import rockclimbing from "@/assets/rockclimbing.png";
+import rockclimbing2x from "@/assets/rockclimbing@2x.png";
+import rockclimbing3x from "@/assets/rockclimbing@3x.png";
+import rockclimbing4x from "@/assets/rockclimbing@4x.png";
+import alec_gwen from "@/assets/alec_gwen.png";
+import alec_gwen2x from "@/assets/alec_gwen@2x.png";
+import alec_gwen3x from "@/assets/alec_gwen@3x.png";
+import alec_gwen4x from "@/assets/alec_gwen@4x.png";
+import travel from "@/assets/travel.png";
+import travel2x from "@/assets/travel@2x.png";
+import travel3x from "@/assets/travel@3x.png";
+import travel4x from "@/assets/travel@4x.png";
+
 
 const title = "About";
 const heading = "This page is all about me, Alec";
@@ -55,27 +68,30 @@ const heading = "This page is all about me, Alec";
     <div class="flex flex-wrap gap-6 mb-[130px]">
       <img
         class="bg-placeholder-gray rounded-[4px]"
-        src="https://picsum.photos/seed/rocks/230/230"
+        src={rockclimbing}
+        srcset={`${rockclimbing2x} 2x, ${rockclimbing3x} 3x, ${rockclimbing4x} 4x`}
         alt="some place I went rock climbing"
         width="230"
         height="230"
       />
       <img
         class="bg-placeholder-gray rounded-[4px]"
-        src="https://picsum.photos/seed/icecream/230/230"
+        src={alec_gwen}
+        srcset={`${alec_gwen2x} 2x, ${alec_gwen3x} 3x, ${alec_gwen4x} 4x`}
         alt="me and my daughter enjoying ice cream"
         width="230"
         height="230"
       />
       <img
         class="bg-placeholder-gray rounded-[4px]"
-        src="https://picsum.photos/seed/ALTO/230/230"
+        src={travel}
+        srcset={`${travel2x} 2x, ${travel3x} 3x, ${travel4x} 4x`}
         alt="a street with a sign that says 'ALTO'"
         width="230"
         height="230"
       />
     </div>
-    <div class="w-[259px] h-[6px] bg-cloudy-white dark:bg-cloudy mb-[52px]">
+    <div class="w-[259px] h-[4px] bg-cloudy-white dark:bg-cloudy mb-[52px]">
     </div>
     <h2 class="max-w-[708px] text-big font-bold mb-[46px]">
       Looking for a consultation, interested in working together?
@@ -85,7 +101,7 @@ const heading = "This page is all about me, Alec";
       class="text-link dark:text-light-link text-regular font-bold no-underline hover:text-link dark:hover:text-light-link hover:underline"
       >Email me</a
     >
-    <div class="w-[259px] h-[6px] bg-cloudy-white dark:bg-cloudy mt-[52px]">
+    <div class="w-[259px] h-[4px] bg-cloudy-white dark:bg-cloudy mt-[52px]">
     </div>
   </main>
 </DefaultLayout>
