@@ -1,11 +1,21 @@
----
-import moonIcon from "@/assets/Moon.svg";
----
-
 <button
   id="dark-mode-toggle"
-  class="w-8 h-8 bg-cream border-[1px] border-cloudy rounded-[4px] flex justify-center items-center"
-  aria-hidden="true"><img src={moonIcon} class="opacity-50" /></button
+  class="w-8 h-8 bg-cream dark:bg-overcast border-[1px] border-cloudy rounded-[4px] flex justify-center items-center opacity-50"
+  aria-label="dark mode toggle"
+>
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+    class="fill-night dark:fill-clear"
+  >
+    <path
+      d="M0 7.99999C0 4.75559 1.93132 1.96227 4.70701 0.707001L5.65436 1.65435C5.2352 2.5138 5 3.47943 5 4.49999C5 8.08984 7.91015 11 11.5 11C12.5206 11 13.4862 10.7648 14.3456 10.3456L15.293 11.293C14.0377 14.0687 11.2444 16 8 16C3.58172 16 0 12.4183 0 7.99999Z"
+    ></path>
+    <path d="M11.5 6.99999L9 4.49999L11.5 1.99999L14 4.49999L11.5 6.99999Z"
+    ></path>
+  </svg></button
 >
 
 <script>
