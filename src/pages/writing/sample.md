@@ -3,6 +3,7 @@ layout: "@/layouts/WritingPostLayout.astro"
 date: "2020-04-12"
 title: "Test article"
 description: "Put a short excerpt or description here. About two-ish sentences."
+draft: true
 ---
 
 <!-- @alecdanz this is for reference on how to add an image ↓ -->
@@ -27,7 +28,6 @@ By the way, you should probably use HTML `<img>` tags instead of markdown becaus
 
 This is a place for me to test stuff in .md files and see how it's being read and adjust
 
-----
+---
 
-This is regular text **Strong test** _italic text_ 
-
+This is regular text **Strong test** _italic text_

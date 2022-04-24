@@ -159,17 +159,18 @@ const volunteerExperience: ResumeItem[] = [
           Select Work
         </h2>
         {selectWorks.map(({thumbnail, title, duration, details, link}) => (
+          <a href={link} class="group no-underline hover:text-inherit dark:hover:text-inherit">
             <article class="flex flex-col lg:flex-row lg:items-start lg:space-x-6 mb-10">
-                <img src={thumbnail} width="96" height="96" class="w-24 h-24 bg-placeholder-gray rounded-lg mb-[6px]" />
-                <div class="w-full">
-                    <header class="flex flex-col lg:flex-row lg:justify-between mb-[6px]">
-                        <h3 class= "text-medium font-semibold text-night dark:text-clear">{title}</h3>
-                        <span class="text-paragraph text-cloudy-white dark:text-cloudy">{duration}</span>
-                    </header>
-                    <p class="mb-[6px]">{details}</p>
-                    <a href={link} class="text-link dark:text-light-link hover:text-link dark:hover:text-light-link no-underline hover:underline">Learn more</a>
-                </div>
+              <img src={thumbnail} width="96" height="96" class="w-24 h-24 bg-placeholder-gray rounded-lg mb-[6px]" />
+              <div class="w-full">
+                <header class="flex flex-col lg:flex-row lg:justify-between mb-[6px]">
+                  <h3 class="text-medium font-semibold text-night dark:text-clear group-hover:text-cloudy-white dark:group-hover:text-cloudy group-hover:underline">{title}</h3>
+                  <span class="text-paragraph text-cloudy-white dark:text-cloudy">{duration}</span>
+                </header>
+                <p class="mb-[6px]">{details}</p>
+              </div>
             </article>
+          </a>
         ))}
       </section>
       <section class="mb-40">

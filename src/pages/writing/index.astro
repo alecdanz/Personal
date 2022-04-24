@@ -3,12 +3,14 @@ import {SEO} from 'astro-seo';
 import DefaultLayout from "@/layouts/DefaultLayout.astro";
 
 const posts = await Astro.glob("./*.md").then((posts) =>
-  posts.sort(
-    (a, b) =>
-      new Date(b.frontmatter.date).getTime() -
-      new Date(a.frontmatter.date).getTime()
-  )
-);
+  posts
+    .filter((post) => process.env.NODE_ENV === 'development' || !post.frontmatter.draft)
+    .sort(
+      (a, b) =>
+          new Date(b.frontmatter.date).getTime() -
+          new Date(a.frontmatter.date).getTime()
+      )
+    );
 
 function formatDate(date: string): string {
   return new Date(date).toLocaleDateString("en-US", { dateStyle: "long" });
@@ -45,10 +47,12 @@ function formatDate(date: string): string {
         where I could talk freely.
       </h3>
       {posts.map((post) => (
-        <article class="py-6 border-t-[1px] last:border-b-[1px] border-cream dark:border-overcast">
-          <h3 class="text-medium font-semibold"><a href={post.url} class="no-underline">{post.frontmatter.title}</a></h3>
-          <time datetime={post.frontmatter.date} class="text-cloudy-white dark:text-cloudy">{formatDate(post.frontmatter.date)}</time>
-        </article>
+        <a href={post.url} class="group no-underline">
+          <article class="py-6 border-t-[1px] last:border-b-[1px] border-cream dark:border-overcast">
+            <h3 class="text-medium font-semibold">{post.frontmatter.title}</h3>
+            <time datetime={post.frontmatter.date} class="text-cloudy-white dark:text-cloudy">{formatDate(post.frontmatter.date)}</time>
+          </article>
+        </a>
       ))}
     </div>
   </main>
