@@ -11,41 +11,33 @@ interface SelectWork {
 }
 const selectWorks: SelectWork[] = [
   {
-    thumbnail: "https://picsum.photos/seed/1/96/96",
+    thumbnail: "https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/933C12B0-AC38-403D-BE7B-AA4905BF3793/ADA67359-7B4D-4AFA-83A0-0B70D2D3B8E5_2/AmPmQX5aKXvFkxoA4SSXrmOQLpt8LCnHjtZVvGix8tEz/Prenda%20design%20system.png",
     title: "Prenda Design System",
     duration: "2021 - Present",
-    details: "Stuff about the Prenda Design System",
+    details: "Creation and design of Prenda's internal design system. Manage figma implementation, design system documentation, and assets.",
     link: "/work/prenda-design-system",
   },
   {
-    thumbnail: "https://picsum.photos/seed/2/96/96",
+    thumbnail: "https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/933C12B0-AC38-403D-BE7B-AA4905BF3793/ADE4ED37-9940-4580-A195-BF4552DA8C89_2/4VknG2rIdYhUPXZLWCg2emI4GYUQNmIXN8qyBo6eydkz/map.png",
     title: "Prenda marketplace",
     duration: "2021 - Present",
-    details: "Create a place for parents and students to find their next microschool guide.",
+    details: "Product design working to solve how parents and students to find their next microschool guide.",
     link: "/work/prenda-marketplace",
   },
   {
-    thumbnail: "https://picsum.photos/seed/3/96/96",
+    thumbnail: "https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/933C12B0-AC38-403D-BE7B-AA4905BF3793/C262CD08-EC7F-4BE2-B0BA-A2953A78C8CF_2/dLxZNd7qUpiPDzsky9oUbk8vlfRbNvvsqHiQc66E4SYz/member.png",
     title: "LegalShield member experience",
     duration: "2020 - 2021",
     details:
-      "Facilitated business product visions through user research, ideation, and prototyping user experiences for various Paycom applications.",
+      "Lead design work for the LegalShield member experience. LegalShield is a subscription based legal service.",
     link: "/work/legalshield-member-experience",
   },
   {
-    thumbnail: "https://picsum.photos/seed/4/96/96",
-    title: "LegalShield partner application",
-    duration: "2018 - 2019",
-    details:
-      "Agency style work with clients from various industries retail, pharmaceutical, insurance, and financial services. Responsibilities included - iconography, prototyping, wireframing and other production efforts.",
-    link: "/work/legalshield-partner-application",
-  },
-  {
-    thumbnail: "https://picsum.photos/seed/5/96/96",
+    thumbnail: "https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/933C12B0-AC38-403D-BE7B-AA4905BF3793/B3FBAFF0-C767-4F8E-AB2A-2163BF535C22_2/4tFr8z2gwV24tSn6ZLhGfMVyNXYEyDbJVDArVOywtx8z/Mandela.png",
     title: "Mandela design system",
     duration: "2019 - 2021",
     details:
-      "Designed for iPad, Mobile, Desktop, and TVos for multiple different clients. By the end of my tenure I was leading a small group of 3 designers on multiple efforts.",
+      "LegalShields internal design system, Mandela. Designed & maintained figma components, branding rework, helped to define illustration strategy.",
     link: "/work/mandela-design-system",
   },
 ];
@@ -75,7 +67,7 @@ const resume: ResumeItem[] = [
       name: 'LegalShield',
       link: 'https://www.legalshield.com/'
     },
-    duration: '2021 - Present',
+    duration: '2018 - 2021',
     details: 'Designed customer experiences for the LegalShield member. Full redesign of the member mobile app. Other roles include - Lead Product Designer, Senior Product Designer, and a Product Designer.'
   },
   {
@@ -160,8 +152,8 @@ const volunteerExperience: ResumeItem[] = [
         </h2>
         {selectWorks.map(({thumbnail, title, duration, details, link}) => (
           <a href={link} class="group no-underline hover:text-inherit dark:hover:text-inherit">
-            <article class="flex flex-col lg:flex-row lg:items-start lg:space-x-6 mb-10">
-              <img src={thumbnail} width="96" height="96" class="w-24 h-24 bg-placeholder-gray rounded-lg mb-[6px]" />
+            <article class="flex flex-col lg:items-start lg: mb-10">
+              <img src={thumbnail} width="716" height="208" class="max-h-52 bg-placeholder-gray rounded-lg mb-[6px]" />
               <div class="w-full">
                 <header class="flex flex-col lg:flex-row lg:justify-between mb-[6px]">
                   <h3 class="text-medium font-semibold text-night dark:text-clear group-hover:text-cloudy-white dark:group-hover:text-cloudy group-hover:underline">{title}</h3>
@@ -174,7 +166,7 @@ const volunteerExperience: ResumeItem[] = [
         ))}
       </section>
       <section class="mb-40">
-        <h2
+        <h2 
           class="text-regular font-bold pb-6 border-b-[1px] border-cream dark:border-overcast mb-6"
         >
           Resume
