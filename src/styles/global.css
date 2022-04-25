@@ -15,6 +15,10 @@
     @apply text-cloudy-white dark:text-cloudy;
   }
 
+  hr {
+    @apply border-cream dark:border-overcast mt-[2em];
+  }
+
   :focus {
     @apply outline-none;
   }
