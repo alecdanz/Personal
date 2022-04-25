@@ -5,7 +5,7 @@ title: "Portfolio sites"
 description: "My thoughts on the state of portfolio sites in the current design industry, as well as intention with this portfolio site."
 ---
 
-## Me on portfolio sites
+## Portfolio sites
 
 We are constantly making split second judgements in life. Humans have survived and evolved through the ability to make these split second decisions. Now we are asked to make decisions about so many more things in life. Walking into a grocery store you will make no minimum of 100 different decision along the way. Do I pick this peanut butter or that one? Well, if you haven't tasted either, in a modern grocery story you're likely going to choose the option that has branding that resonates with you. Or you might just choose the less expensive option. Either way, you're making a choice, a choice about peanut butter but one that defines you in some way.
 
