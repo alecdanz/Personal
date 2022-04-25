@@ -38,4 +38,15 @@ Designed the LegalShield member experience. We refactored mobile Andriod and iOS
 
 ![Desktop shot](https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/A0797679-C1B9-49CD-BD61-243ABAEC9028/77F3EE84-39BE-49B7-8F2C-72EC6FD9A069_2/CtEg2lmOAq5IbrjG7UrRcgIxooXNs8tSvjQV8N6nhvMz/Home.png)
 
+----
+
 ![Service req formula](https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/A0797679-C1B9-49CD-BD61-243ABAEC9028/7C960BCA-8E09-46ED-9BD5-C0291ED281A4_2/IFp2CQCMLr1igVkhk9UNBa9pNXOUoXQIcIMyk8JDfLsz/image%201.png)
+
+*the meat of our application was the creation of the service request pattern, a way to request new legal service from one of the legal shield providers* 
+
+A service request could vary depending on the task at hand but followed the same basic structure shown above. 
+
+![image](https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/A0797679-C1B9-49CD-BD61-243ABAEC9028/EDF2EC35-06C6-470C-8040-070723C0C485_2/iyoZvebZtNmOrahQLIl2cJIV8GkbkMDUoucgimUCersz/Questionanswertaskbreakdown.png)
+
+*mobile task page - we had multiple different task pages that would be implemented depending on the service request at hand. For example a request for a Will might be a 8-9 task process, where a request to fight a traffic violation would only consist of 3 steps.* 
+
