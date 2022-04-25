@@ -10,7 +10,7 @@ description: "Create a place for parents and students to find their next microsc
 
 **Team - Sara Hathaway (PM) Blake Bishop (Lead engineer) Sam Roberts (Engineer) Jake McBride (Senior engineer)**
 
-Select shots from the Prenda Marketplace experience. The marketplace, or the microschool map, is an experience designed to allow for parents to connect with guides (teachers) in their area. 
+The marketplace, or the microschool map, is an experience designed to enable parents to quickly and easily find and connect with Microschools in their area that meet their family's unique needs
 
 ![Map](https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/97E5701D-10BB-4608-96AB-676E1F7E38FB/A7240BF3-A32C-4893-AEEF-180835317BBB_2/rz8vbfLqy6z01UgHEn1JPuPSi7EcWrFFxiM2nIb6lgsz/Map.png)
 
@@ -31,3 +31,4 @@ Select shots from the Prenda Marketplace experience. The marketplace, or the mic
 
 ![Microschool details 2](https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/97E5701D-10BB-4608-96AB-676E1F7E38FB/B8271D2E-A8B3-4721-814C-FCF631BA9B55_2/pAsxNW25a10yxdo4ExTtlZALFtEy21skX5tii5v4Q5oz/Shot%203.png)
 
+[← Return to work](https://alecdanz.github.io/work/)

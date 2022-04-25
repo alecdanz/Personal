@@ -47,3 +47,5 @@ The Prenda Design System is implemented in the “design-system” repository, h
 ![Icon usage](https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/DEAE60C6-5C87-49B3-A537-E32EDCB54AA2/44BB5226-7F60-40AC-A277-B05979491776_2/osInbla8XZ8hMKuCKXfl8pZ3Yl2Qe2JA3SbhLJHaFzsz/Icon%20usage.png)
 
 *Icon usage documentation*
+
+[← Return to work](https://alecdanz.github.io/work/)

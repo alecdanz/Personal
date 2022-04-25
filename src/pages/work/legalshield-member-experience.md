@@ -50,3 +50,4 @@ A service request could vary depending on the task at hand but followed the same
 
 *mobile task page - we had multiple different task pages that would be implemented depending on the service request at hand. For example a request for a Will might be a 8-9 task process, where a request to fight a traffic violation would only consist of 3 steps.* 
 
+[← Return to work](https://alecdanz.github.io/work/)
