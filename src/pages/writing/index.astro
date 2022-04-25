@@ -17,7 +17,7 @@ function formatDate(date: string): string {
 }
 ---
 
-<DefaultLayout activeLink="writing">
+<DefaultLayout>
   <SEO
     slot="seo"
     title="Alec Danz | Writing"
@@ -47,8 +47,8 @@ function formatDate(date: string): string {
         where I could talk freely.
       </h3>
       {posts.map((post) => (
-        <a href={post.url} class="group no-underline">
-          <article class="py-6 border-t-[1px] last:border-b-[1px] border-cream dark:border-overcast">
+        <a href={post.url} class="block group no-underline border-t-[1px] last:border-b-[1px] border-cream dark:border-overcast">
+          <article class="py-6">
             <h3 class="text-medium font-semibold">{post.frontmatter.title}</h3>
             <time datetime={post.frontmatter.date} class="text-cloudy-white dark:text-cloudy">{formatDate(post.frontmatter.date)}</time>
           </article>

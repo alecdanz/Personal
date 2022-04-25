@@ -1,48 +1,49 @@
 ---
 import DarkModeToggle from '@/components/DarkModeToggle.astro';
 
-export interface Props {
-  activeLink: "home" | "work" | "writing" | "about";
-}
-const { activeLink } = Astro.props;
+const url = new URL(Astro.request.url);
 
-const links = [
+interface Link {
+  href: string,
+  active: boolean, 
+  text: string
+}
+const links: Link[] = [
   {
-    id: 'home',
     href: '/',
+    active: url.pathname === '/',
     text: 'Home'
   },
   {
-    id: 'work',
     href: '/work',
+    active: url.pathname.startsWith('/work'),
     text: 'Work'
   },
   {
-    id: 'writing',
     href: '/writing',
+    active: url.pathname.startsWith('/writing'),
     text: 'Writing'
   },
   {
-    id: 'about',
     href: '/about',
+    active: url.pathname.startsWith('/about'),
     text: 'About'
   },
 ]
 
-function linkClass(type: string): string {
+function linkClass(link: Link): string {
   const base =
     "text-regular text-overcast font-bold hover:text-cloudy-white dark:text-cream dark:hover:text-cloudy no-underline";
-  const active =
-    type === activeLink
+  const circle = link.active
       ? "text-night dark:text-clear flex items-center relative before:block before:w-6 before:h-6 before:rounded-full before:absolute before:left-[-30px]"
       : "";
   const color = {
-    home: "before:bg-orange",
-    work: "before:bg-magenta",
-    writing: "before:bg-yellow",
-    about: "before:bg-cyan",
-  }[type];
-  return `${base} ${active} ${color}`;
+    Home: "before:bg-orange",
+    Work: "before:bg-magenta",
+    Writing: "before:bg-yellow",
+    About: "before:bg-cyan",
+  }[link.text];
+  return `${base} ${circle} ${color}`;
 }
 ---
 
@@ -50,9 +51,9 @@ function linkClass(type: string): string {
   <ul class="flex flex-col items-end lg:flex-row lg:items-center lg:space-x-20">
     {links.map((link) => (
       <li>
-        {link.id === activeLink
-          ? <h1><a href={link.href} class={linkClass(link.id)} aria-current>{link.text}</a></h1>
-          : <a href={link.href} class={linkClass(link.id)}>{link.text}</a>}
+        {link.active
+          ? <h1><a href={link.href} class={linkClass(link)} aria-current>{link.text}</a></h1>
+          : <a href={link.href} class={linkClass(link)}>{link.text}</a>}
       </li>
     ))}
   </ul>

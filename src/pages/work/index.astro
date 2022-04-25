@@ -32,14 +32,15 @@ const selectWorks: SelectWork[] = [
       "Lead design work for the LegalShield member experience. LegalShield is a subscription based legal service.",
     link: "/work/legalshield-member-experience",
   },
-  {
-    thumbnail: "https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/933C12B0-AC38-403D-BE7B-AA4905BF3793/B3FBAFF0-C767-4F8E-AB2A-2163BF535C22_2/4tFr8z2gwV24tSn6ZLhGfMVyNXYEyDbJVDArVOywtx8z/Mandela.png",
-    title: "Mandela design system",
-    duration: "2019 - 2021",
-    details:
-      "LegalShields internal design system, Mandela. Designed & maintained figma components, branding rework, helped to define illustration strategy.",
-    link: "/work/mandela-design-system",
-  },
+  // TODO: consider moving this data in the frontmatter of the markdown files to better support drafts
+  // {
+  //   thumbnail: "https://res.craft.do/user/full/6d5aec0c-f6e6-7dbd-27c9-cc314efee476/doc/933C12B0-AC38-403D-BE7B-AA4905BF3793/B3FBAFF0-C767-4F8E-AB2A-2163BF535C22_2/4tFr8z2gwV24tSn6ZLhGfMVyNXYEyDbJVDArVOywtx8z/Mandela.png",
+  //   title: "Mandela design system",
+  //   duration: "2019 - 2021",
+  //   details:
+  //     "LegalShields internal design system, Mandela. Designed & maintained figma components, branding rework, helped to define illustration strategy.",
+  //   link: "/work/mandela-design-system",
+  // },
 ];
 
 interface ResumeItem {
@@ -121,7 +122,7 @@ const volunteerExperience: ResumeItem[] = [
 ]
 ---
 
-<DefaultLayout  activeLink="work">
+<DefaultLayout>
   <SEO
     slot="seo"
     title="Alec Danz | Work"

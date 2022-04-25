@@ -1,11 +1,6 @@
 ---
 import TopBar from "@/components/TopBar.astro";
 import "@/styles/global.css";
-
-export interface Props {
-  activeLink: "home" | "work" | "writing" | "about";
-}
-const { activeLink } = Astro.props as Props;
 ---
 
 <html lang="en">
@@ -45,7 +40,7 @@ const { activeLink } = Astro.props as Props;
     class="bg-clear dark:bg-night transition-all font-body text-night dark:text-clear text-paragraph font-normal px-6 pb-20 lg:px-[172px]"
   >
     <header class="mb-36 relative">
-      <TopBar {activeLink} />
+      <TopBar />
     </header>
     <slot />
   </body>

@@ -1,6 +1,7 @@
 ---
 import { SEO } from "astro-seo";
 import DefaultLayout from "./DefaultLayout.astro";
+import BasePostLayout from "./BasePostLayout.astro";
 
 export interface Content {
   title: string;
@@ -9,7 +10,7 @@ export interface Content {
 const { content } = Astro.props as { content: Content };
 ---
 
-<DefaultLayout activeLink="work">
+<DefaultLayout>
   <SEO
     slot="seo"
     title={`Alec Danz | ${content.title}`}
@@ -30,27 +31,7 @@ const { content } = Astro.props as { content: Content };
     }}
   />
 
-  <main class="max-w-screen-lg mx-auto">
-    <article class="max-w-[632px]">
-      <slot />
-    </article>
-  </main>
+  <BasePostLayout>
+    <slot />
+  </BasePostLayout>
 </DefaultLayout>
-
-<style>
-  article :global(h2) {
-    @apply text-regular font-bold mb-[1em] mt-[2em];
-  }
-
-  article :global(h3) {
-    @apply text-medium font-semibold mb-[1em] mt-[2em];
-  }
-
-  article :global(strong) {
-    @apply font-semibold;
-  }
-
-  article :global(img) {
-    @apply my-10 max-w-full h-auto;
-  }
-</style>
